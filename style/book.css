@@ -1,0 +1,76 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.grid{
+    row-gap: 20px;
+ 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.card{
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    transition: 2s;
+    animation: fade-in linear;
+    animation-timeline: view();
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    scale: 1.1;
+}
+.nav-item :hover{
+    transition: 1s;
+    scale: 1.2;
+}
+
+.but :hover{
+    transition: 1s;
+    scale: 1.2;
+}
+
+
+
+.animate-slide-in {
+    animation: slide-in 1s ease-in;
+    /* Modify this to adjust animation duration and timing */
+    transform: translateX(-100); /* Start offscreen to the left */
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      scale: 0.8;
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .animate-slide-out {
+    animation: slide-out 1s ease-in;
+    /* Modify this to adjust animation duration and timing */
+    transform: translateX(-100); /* Start offscreen to the left */
+  }
+  
+  @keyframes slide-out {
+    from {
+      transform: translateX(100%);
+      scale: 0.8;
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .size{
+    height: 350px;
+  }
